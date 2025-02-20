@@ -1,3 +1,170 @@
 body{
+    background-color:#f3e5d8;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Recipe{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 390px;
+    padding: 30px;
+    margin: 100px;
     
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+    margin: 0px 0px 10px 0px;
+    margin-bottom: 10px;
+}
+
+.Description{
+    font-family: 'Outfit', sans-serif;
+    font-size:  0.62rem;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+.Time{
+    background-color: #f3e5d8;
+    padding: 2px 18px; 
+    border-radius: 5px;
+   
+}
+.Preparation{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.80rem;
+    color: hsl(332, 51%, 32%);
+ 
+}
+
+#Total, #Preparation, #Cooking{ 
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.70rem;
+    color: hsl(24, 5%, 18%) ;
+}
+
+#total-time, #preparation-time, #cooking-time{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.70rem;
+    color: hsl(24, 5%, 18%);
+}
+
+.Ingredients{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.Ingredients-list{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.70rem;
+    color: hsl(24, 5%, 18%);
+    line-height: 20px;
+    list-style-type: none;
+    border-bottom-style: solid;
+    border-width: 0.01px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-color:hsl(24, 5%, 18%);
+}
+
+.Ingredients-list ::before {
+    content: "•";
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 6px;
+    width: 1em; 
+    margin-left: -1em; 
+    color: hsl(14, 45%, 36%);
+}
+.Instructions{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.Instructions-list{
+    counter-reset: custom-counter;
+    list-style-type: none;
+    border-bottom-style: solid;
+    border-width: 0.01px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-color:hsl(24, 5%, 18%);
+}
+.Instructions-list li {
+    counter-increment: custom-counter; 
+    position: relative;
+    
+}
+
+.Instructions-list ::before{
+    content: counter(custom-counter) ". "; 
+    color: hsl(14, 45%, 36%); 
+    font-size: 10px; 
+    font-weight: bold; /* Custom number weight */
+    position: absolute;
+    left: -30px; 
+}
+
+#Heat, #Cook, #Add-fillings, #Beat, #Fold, #Enjoy{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.70rem;
+    color: hsl(24, 5%, 18%) ;
+}
+
+#Heat-instructions, #Cook-instructions, #fillings-instructions, #Beat-instructions, #Fold-instructions, #Enjoy-instructions {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.70rem;
+    color: hsl(24, 5%, 18%);
+}   
+
+.Nutrition{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.table{
+    font-family: 'Outfit', sans-serif;
+    font-size:  0.62rem;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+.Nutrition-table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.68rem;
+    color:hsl(24, 5%, 18%) ;
+}
+
+.Nutrition-table tbody tr{
+    border-bottom: 1px solid hsl(24, 5%, 18%)
+}
+
+.color{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
 }

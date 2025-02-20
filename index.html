@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+      </style>
     <link
       rel="icon"
       type="image/png"
@@ -13,9 +17,11 @@
     />
 
     <title>Frontend Mentor | Recipe page</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
       .attribution {
         font-size: 11px;
+        background-color: hsl(330, 100%, 98%);
         text-align: center;
       }
       .attribution a {
@@ -24,74 +30,89 @@
     </style>
   </head>
   <body>
-    <h2>Simple Omelette Recipe</h2>
+    <div class="Recipe">
+      <img src="./assets/images/image-omelette.jpeg" alt="Delicious Simple Omelette">
+      <h2>Simple Omelette Recipe</h2>
+      <p class="Description">
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
+      <div class="Time">
+        <h3 class="Preparation">Preparation time</h3>
+        <ul>
+          <li> <span id="Total">Total:</span> <span id="total-time">Approximately 10 minutes</span></li>
+          <li> <span id="Preparation">Preparation:</span> <span id="preparation-time">5 minutes</span></li>
+          <li> <span id="Cooking">Cooking:</span> <span id="cooking-time">5 minutes</span></li>
+        </ul>
+      </div>
 
-    <p>
-      An easy and quick dish, perfect for any meal. This classic omelette
-      combines beaten eggs cooked to perfection, optionally filled with your
-      choice of cheese, vegetables, or meats.
-    </p>
+    <h3 class="Ingredients">Ingredients</h3>
 
-    <h3>Preparation time</h3>
-    <ul>
-      <li>Total: Approximately 10 minutes</li>
-      <li>Preparation: 5 minutes</li>
-      <li>Cooking: 5 minutes</li>
-    </ul>
-
-    <h3>Ingredients</h3>
-
-    <ul>
+    <ul class="Ingredients-list">
       <li>2-3 large eggs</li>
       <li>Salt, to taste</li>
       <li>Pepper, to taste</li>
       <li>1 tablespoon of butter or oil</li>
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
+    <h3 class="Instructions">Instructions</h3>
 
-    <h3>Instructions</h3>
-
-    <ol>
+    <ol class="Instructions-list">
       <li>
-        Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper
-        until they are well mixed. You can add a tablespoon of water or milk for
-        a fluffier texture.
+        <span id="Beat">Beat the eggs:</span><span id="Beat-instructions">In a bowl, beat the eggs with a pinch of salt and pepper
+          until they are well mixed. You can add a tablespoon of water or milk for
+          a fluffier texture.</span>
       </li>
 
       <li>
-        Heat the pan: Place a non-stick frying pan over medium heat and add
-        butter or oil.
+        <span id="Heat">Heat the pan:</span><span id='Heat-instructions'>Place a non-stick frying pan over medium heat and add
+          butter or oil.</span>
       </li>
 
       <li>
-        Cook the omelette: Once the butter is melted and bubbling, pour in the
-        eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+        <span id="Cook">Cook the omelette:</span> <span id="Cook-instructions">Once the butter is melted and bubbling, pour in the
+          eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span>
       </li>
 
       <li>
-        Add fillings (optional): When the eggs begin to set at the edges but are
-        still slightly runny in the middle, sprinkle your chosen fillings over
-        one half of the omelette.
+        <span id="Add-fillings">Add fillings (optional):</span><span id="fillings-instructions"> When the eggs begin to set at the edges but are
+          still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span>
       </li>
 
       <li>
-        Fold and serve: As the omelette continues to cook, carefully lift one
-        edge and fold it over the fillings. Let it cook for another minute, then
-        slide it onto a plate.
+        <span id='Fold'>Fold and serve:</span><span id="Fold-instructions"> As the omelette continues to cook, carefully lift one
+          edge and fold it over the fillings. Let it cook for another minute, then
+          slide it onto a plate.</span>
       </li>
-      <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+
+      <li>
+        <span id="Enjoy">Enjoy:</span> <span id="Enjoy-instructions">Serve hot, with additional salt and pepper if needed.</span>
+      </li>
     </ol>
 
-    <h3>Nutrition</h3>
+    <h3 class="Nutrition">Nutrition</h3>
 
-    The table below shows nutritional values per serving without the additional
-    fillings. Calories 277kcal Carbs 0g Protein 20g Fat 22g
+    <p class="table">The table below shows nutritional values per serving without the additional
+    fillings.</p>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <table class="Nutrition-table">
+      <tr>
+        <td>Calories</td>
+        <td class="color">277kcal</td>
+      </tr>
+      <tr>
+        <td>Carbs</td>
+        <td class="color">0g</td>
+      </tr>
+      <tr>
+        <td>Protein</td>
+        <td class="color">20g</td>
+      </tr>
+      <tr>
+        <td>Fat</td>
+        <td class="color">22g</td>
+      </tr>
+    </table>
   </body>
 </html>
